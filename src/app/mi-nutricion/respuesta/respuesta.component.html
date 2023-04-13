@@ -1,0 +1,26 @@
+<h1>Jesus Demetrio Salazar Gonzalez</h1>
+<div class="row">
+<div class="col p-5">
+<img class="img-fluid img-thumbnail" src="/assets/fotomamei.png" >
+</div>
+<div class="col p-5">
+
+    <h1>IMC Grafica</h1>
+    
+    <div id="divChart" >
+      <canvas id="myChart" ></canvas>
+    </div>
+
+    <h2>Condicion</h2>
+    <h3 class="pt-3">IMC: {{this.imc}}</h3>
+    <h3 class="pt-3">{{this.condicion}}</h3>
+</div>
+</div>
+<div class="row p-5">
+<h2>Recomendaciones</h2>
+<ul>
+  <li *ngFor="let item of recomendaciones">{{item}}</li>
+</ul>
+</div>
+
+

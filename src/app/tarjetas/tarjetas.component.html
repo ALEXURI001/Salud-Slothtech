@@ -1,0 +1,79 @@
+<body>
+    <br><br>
+    <h1 class="tittle">COMIDAS</h1>
+    <div class="flex__center ">
+        <button type="button" class="btn btn-light button__center" (click)="actualizar()">Generar más...</button>
+    </div>
+
+<div class="slide-container swiper slide-container1" >
+    <div class="slide-content slide-content1" *ngFor="let comida of comidas">
+        <div class="card-wrapper swiper-wrapper">
+
+            <div class="card_noti swiper-slide">
+
+                    <div class="image-content">
+                        <img src="{{comida.foto}}"
+                            class="card-img">
+                    </div>
+
+                
+
+                <div class="card-contenido">
+
+                    <h2 class="name__tittle">{{comida.nombre}}</h2>
+                    <h3 class="name__subtittle">Calorias: {{comida.calorias}}</h3>
+
+                    <p class="description__text">
+
+                        <br>
+                   {{comida.descripcion}}
+                   <br>
+                  
+                    </p>
+                    <p class="ingredientes__text"> {{comida.ingredientes}}</p>
+
+                    <div class="buttons-selection">
+                        <!--<a (click)="bloquear()" class=""><img src="https://cdn-icons-png.flaticon.com/512/254/254419.png"
+                                width="40px" class="buttons-img"></a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>   
+   
+</div>
+
+
+
+
+
+<app-colaciones></app-colaciones>
+
+</body>
+
+
+<!--
+
+<div class="slide-container swiper slide-container1">
+    <div class="slide-content slide-content1">
+        <div class="card-wrapper swiper-wrapper">
+         
+            <div class="card_noti swiper-slide">
+                <div class="image-content">
+                    <img src="/Carrusel_noticias/imagen_prueba.jpeg" alt="" class="card-img">
+                    <span class="span__fecha">10 febrero, 2023</span>
+                </div>
+                <div class="card-contenido">
+                    <a href="#" class="ref"><h2 class="name__tittle">EL INSTITUTO TECNOLÓGICO DE CANCÚN ES DESIGNADO COORDINADOR TÉCNICO DE VINCULACIÓN DE LA COMISIÓN ESTATAL PARA LA PLANEACIÓN DE LA EDUCACIÓN SUPERIOR (COEPES).</h2></a>
+                    <p class="description__text">El día de hoy se llevó la primera sesión plenaria de la Comisión Estatal para la Planeación de la Educación Superior (COEPES), en la ciudad […]</p>
+                    <a href="#"><button class="button" >Leer mas</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+</div> -->

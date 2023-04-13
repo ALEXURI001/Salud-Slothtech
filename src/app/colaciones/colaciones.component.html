@@ -1,0 +1,52 @@
+<h1 class="tittle">COLACIONES</h1>
+
+<body>
+    
+    <div class="flex__center ">
+        <button type="button" class="btn btn-light button__center" (click)="actualizar()">Generar más...</button>
+    </div>
+
+    <div class="slide-container swiper slide-container1" >
+        <div class="slide-content slide-content1" *ngFor="let colacion of colaciones">
+            <div class="card-wrapper swiper-wrapper">
+    
+                <div class="card_noti swiper-slide">
+          
+                        <div class="image-content">
+                            <img src="{{colacion.foto}}" alt=""
+                                class="card-img">
+                        </div>
+    
+                    
+                    <div class="card-contenido">
+    
+                        <h2 class="name__tittle">{{colacion.nombre}}</h2>
+                        <h3 class="name__subtittle">Calorias: {{colacion.calorias}}</h3>
+    
+                        <p class="description__text">
+    
+                            <br>
+                                {{colacion.descripcion}}
+                        </p>
+
+                        <p class="ingredientes__text"> {{colacion.ingredientes}}</p>
+    
+                        <div class="buttons-selection">
+                          <!-- <a href="" class=""><img src="https://cdn-icons-png.flaticon.com/512/254/254419.png"
+                                    width="40px" class="buttons-img"></a>
+                            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25364.png" width="40px"
+                                    class="buttons-img"></a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    
+    </body>
+    
+    
